@@ -3,13 +3,14 @@ package com.sparta.todoapp.repository;
 import jakarta.persistence.*;
 import lombok.Builder;
 import lombok.Getter;
-import org.springframework.cglib.core.Local;
+import lombok.NoArgsConstructor;
+
 
 import java.time.LocalDateTime;
 
 @Getter
 @Entity
-@Table(name = "todo")
+@NoArgsConstructor
 public class Todo {
     @Id
     @GeneratedValue(strategy = GenerationType.SEQUENCE)
